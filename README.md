@@ -1028,33 +1028,14 @@ With a remote backend, workspace state is maintained according to the backend's 
 
 ---
 
-# Conclusion
+---
 
-Projects 4.1 and 4.2 demonstrate practical Terraform Infrastructure as Code concepts, beginning with reusable modules, output variables, and state management and extending to multi-environment infrastructure using Terraform workspaces.
+# Project Details
 
-The same Terraform configuration is used to manage:
+### Project 4.1 – Managing Terraform Modules, Output and State File
 
-```text
-Development
-     |
-     v
-Staging
-     |
-     v
-Production
-```
+This project focuses on creating reusable Terraform modules, configuring input and output variables, deploying AWS infrastructure, and understanding Terraform state management.
 
-Each environment is managed through its own Terraform workspace and independent state.
+### Project 4.2 – Managing Multiple Environments Using Terraform Workspaces
 
-The production environment is also used to demonstrate an infrastructure change:
-
-```text
-EC2 Instance Type
-
-t3.micro
-   |
-   v
-t3.small
-```
-
-Terraform `plan` is used to review the expected change before `apply`, demonstrating a controlled Infrastructure as Code workflow.
+This project focuses on managing Development, Staging, and Production environments using Terraform Workspaces, maintaining independent state files, and analyzing infrastructure changes using Terraform Plan and Apply.
